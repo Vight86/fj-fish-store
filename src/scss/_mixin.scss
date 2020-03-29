@@ -1,0 +1,33 @@
+//Enter fon size in pixels to convert it in em
+@mixin fs-em ($font-size-in-pixels) { //entry size in pixel but without units
+  font-size: (($font-size-in-pixels / $font-size-base) + em);
+}
+
+//Enter fon size in pixels to convert it in rem
+@mixin fs-rem ($font-size-in-pixels) { //entry size in pixel but without units
+  font-size: (($font-size-in-pixels / $font-size-base) + rem);
+}
+
+@mixin font ($font-size-in-pixels: 16, $font-weight: 400, $line-height: 16) {
+  font-weight: $font-weight;
+  font-size: (($font-size-in-pixels / $font-size-base) + em);
+  line-height: $line-height / $font-size-in-pixels;
+}
+
+//Enter width in pixels to convert it in em
+@mixin width-em ($width-in-pixels, $currnet-font-size-in-pixels) { //entry size in pixel but without units
+  width: (($width-in-pixels / $currnet-font-size-in-pixels) + em);
+}
+
+//Enter height in pixels to convert it in em
+@mixin height-em ($height-in-pixels, $currnet-font-size-in-pixels) { //entry size in pixel but without units
+  height: (($height-in-pixels / $currnet-font-size-in-pixels) + em);
+}
+
+//Enter all padding in pixels
+@mixin padding-em ($padding-top, $padding-right, $padding-bottom, $paddind-left, $current-font-size) {
+  padding-top: (($padding-top / $current-font-size) + em);
+  padding-right: (($padding-right / $current-font-size) + em);
+  padding-bottom: (($padding-bottom / $current-font-size) + em);
+  padding-left: (($padding-left / $current-font-size) + em);
+}

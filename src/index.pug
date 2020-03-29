@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Fish store
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:400,700i&display=swap")
+    link(rel="stylesheet", href="style.min.css")
+    script(src="js/vendor/jquery-1.11.0.min.js" defer)
+    script(src="js/vendor/jquery-migrate-1.2.1.min.js" defer)
+    script(src="js/vendor/slick.min.js" defer)
+    script(src="js/app.min.js" defer)
+  body
+    header.header
+      .menu.menu_top
+        .container.menu__container
+          a.logo.menu__logo
+            img.logo__img(src="img/header/logo.png", alt="Logo")
+          a.link.phone.menu__phone(href="#")
+            svg.phone__icon
+              use(href='icons/sprite.svg#phone-icon')
+            |  +54 1124738899
+          form.search.menu__search
+            button.search__btn
+              svg.search__icon
+                use(href="icons/sprite.svg#search-icon")
+            input.search__input
+          form.lang
+            select.lang__select(name="lang__select")
+              option(value="рус") рус
+              option(value="англ") англ
+              option(value="бел") бел
+          div.account
+            -
+              const accountLinks = [
+                {name: 'Избранное', icon: 'icons/sprite.svg#heart-icon'},
+                {name: 'Корзина', icon: 'icons/sprite.svg#cart-icon'},
+                {name: 'Вход', icon: 'icons/sprite.svg#user-icon'},
+              ]
+            each el in accountLinks
+              a.link.account__link(href="#")
+                svg.account__icon
+                  use(href= el.icon)
+                |  #{el.name}
+      .menu.menu_bottom
+        .menu__container
+          - const menuLinks = ['Хиты', 'Новинки', 'Акции', 'Каталог', 'Прайс'];
+            each el in menuLinks
+              a.link.menu__link.link_sm(href="#")= el
+      .slider-wrap
+        .header__slider
+          .slider
+            -
+              const slides = [
+                {src: 'img/header/slider-img-1.jpg', alt: 'slide 1'},
+                {src: 'img/header/slider-img-2.jpg', alt: 'slide 2'},
+                {src: 'img/header/slider-img-3.jpg', alt: 'slide 3'},
+                ];
+            each elem in slides
+              .slide
+                img(src= elem.src, alt= elem.alt)
+    main.products.container
+      .products__top
+        button.btn.btn_as-link.btn_filter
+          svg.filter-icon
+            use(href="icons/sprite.svg#filter-icon")
+          | Фильтры
+        button.btn.btn_as-link.btn_sort.products__btn_sort
+          svg.sort-icon
+            use(href="icons/sprite.svg#sort-icon")
+          | Сортировка
+      .products__grid
+        -
+          const products = [
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '5',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '25',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '4',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '15',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '5',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '11',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '5',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '20',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '3',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '45',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '5',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '15',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '3',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '30',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '5',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '15',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '4',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '15',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '4',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '15',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '4',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '15',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '4',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '15',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '4',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '15',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '4',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '15',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '4',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '15',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '4',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '15',},
+
+            {id: '4545',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '4',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '15',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '4',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '15',},
+
+            {id: '31231',
+            img: 'img/products/product-1.jpg',
+            img2: 'img/products/product-1.jpg',
+            img3: 'img/products/product-3.jpg',
+            title: 'Title Block Menu', rating: '4',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.',
+            price: '30',},
+          ]
+        each item in products
+          .item-wrap
+            .item.products__item
+              figure.item__img
+                img(src=item.img alt=item.title)
+                img(src=item.img alt=item.title)
+                img(src=item.img alt=item.title)
+              h3.title.item__title= item.title
+              p.item__id= item.id
+              div.item__rating
+                div.item__rating_active(style=`width: ${item.rating / 5 * 100}%`)
+                  svg.item__star-icon
+                    use(href="icons/sprite.svg#star-icon")
+                  svg.item__star-icon
+                    use(href="icons/sprite.svg#star-icon")
+                  svg.item__star-icon
+                    use(href="icons/sprite.svg#star-icon")
+                  svg.item__star-icon
+                    use(href="icons/sprite.svg#star-icon")
+                  svg.item__star-icon
+                    use(href="icons/sprite.svg#star-icon")
+                div.item__rating_bgr
+                  svg.item__star-icon
+                    use(href="icons/sprite.svg#star-icon")
+                  svg.item__star-icon
+                    use(href="icons/sprite.svg#star-icon")
+                  svg.item__star-icon
+                    use(href="icons/sprite.svg#star-icon")
+                  svg.item__star-icon
+                    use(href="icons/sprite.svg#star-icon")
+                  svg.item__star-icon
+                    use(href="icons/sprite.svg#star-icon")
+              p.item__description= item.description
+              p.item__price= item.price
+              button.btn.item__btn.btn_order.btn_sm Заказать
+      .products__bottom.container
+        button.btn.btn_dark.btn_more Показать все
+    footer.footer
+      .container.footer__container
+        ul.footer__recomendations
+          li Рекомендации
+          li
+            a.link(href="#") Наименование
+          li
+            a.link(href="#") Наименование
+          li
+            a.link(href="#") Наименование
+          li
+            a.link(href="#") Наименование
+        ul.footer__payment
+          li Варианты оплаты
+          li
+            a.link(href="#") PayPal
+          li
+            a.link(href="#") Visa
+          li
+            a.link(href="#") MasterCard
+        ul.footer__service
+          li Обслуживание
+          li
+            a.link(href="#") Часто задаваемые вапросы
+          li
+            a.link(href="#").
+                Тех. поддержка
+          li
+            a.link(href="#") Правила сервиса
+
+        ul.footer__contacts
+          li Контакты
+          li
+            a.link(href="#") Адрес
+          li
+            a.link(href="#") E-mail
+          li
+            a.link(href="#") Телефон
+    .modal
+      .modal__block
+        button.btn.btn_close
+          svg(viewbox="0 0 20 20")
+            line(x1="0" y1="0" x2="20" y2="20")
+            line(x1="20" y1="0" x2="0" y2="20")
+        .modal__slider-container
+          .modal__slider-wrap
+            .modal__slider-inner
+              .modal__slider
+              button.modal__arrow.modal__arrow_prev
+              button.modal__arrow.modal__arrow_next
+          .modal__slider-nav-wrap
+            .modal__slider-nav
+        .modal__info
+          .title.modal__title
+          .modal__rating-wrap
+            .modal__rating
+            p.modal__reviews-number 10 Отзывов
+          form.modal__form
+            .form__hidden
+              input.form__price-input(name="price")
+              input.form__title-input(name="title")
+              input.form__title-id(name="id")
+            .form__details
+              div.form__price
+              div.form__quantity
+                input.form__input.form__input_narrow(type="number" value="1" name="qty")
+                button.quantity__up
+                button.quantity__down
+            .form__description
+            .form__contact
+              input.form__input.form__input_normal.form__email.reset(type="email" name="email" placeholder="Введите email" required)
+              input.form__input.form__input_normal.form__phone.reset(type="tel" name="phone" placeholder="Введите телефон" required)
+            button.btn.form__btn.btn_order.btn_lg.btn_submit(type="submit") Заказать
+            span.form__success Спасибо за заказ

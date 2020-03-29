@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Fish store</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700i&amp;display=swap"/>
+    <link rel="stylesheet" href="style.min.css"/>
+    <script src="js/vendor/jquery-1.11.0.min.js" defer="defer"></script>
+    <script src="js/vendor/jquery-migrate-1.2.1.min.js" defer="defer"></script>
+    <script src="js/vendor/slick.min.js" defer="defer"></script>
+    <script src="js/app.min.js" defer="defer"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu menu_top">
+        <div class="container menu__container"><a class="logo menu__logo"><img class="logo__img" src="img/header/logo.png" alt="Logo"/></a><a class="link phone menu__phone" href="#">
+            <svg class="phone__icon">
+              <use href="icons/sprite.svg#phone-icon"></use>
+            </svg> +54 1124738899</a>
+          <form class="search menu__search">
+            <button class="search__btn">
+              <svg class="search__icon">
+                <use href="icons/sprite.svg#search-icon"></use>
+              </svg>
+            </button>
+            <input class="search__input"/>
+          </form>
+          <form class="lang">
+            <select class="lang__select" name="lang__select">
+              <option value="рус">рус</option>
+              <option value="англ">англ</option>
+              <option value="бел">бел</option>
+            </select>
+          </form>
+          <div class="account"><a class="link account__link" href="#">
+              <svg class="account__icon">
+                <use href="icons/sprite.svg#heart-icon"></use>
+              </svg> Избранное</a><a class="link account__link" href="#">
+              <svg class="account__icon">
+                <use href="icons/sprite.svg#cart-icon"></use>
+              </svg> Корзина</a><a class="link account__link" href="#">
+              <svg class="account__icon">
+                <use href="icons/sprite.svg#user-icon"></use>
+              </svg> Вход</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu menu_bottom">
+        <div class="menu__container"><a class="link menu__link link_sm" href="#">Хиты</a><a class="link menu__link link_sm" href="#">Новинки</a><a class="link menu__link link_sm" href="#">Акции</a><a class="link menu__link link_sm" href="#">Каталог</a><a class="link menu__link link_sm" href="#">Прайс</a>
+        </div>
+      </div>
+      <div class="slider-wrap">
+        <div class="header__slider">
+          <div class="slider">
+            <div class="slide"><img src="img/header/slider-img-1.jpg" alt="slide 1"/></div>
+            <div class="slide"><img src="img/header/slider-img-2.jpg" alt="slide 2"/></div>
+            <div class="slide"><img src="img/header/slider-img-3.jpg" alt="slide 3"/></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="products container">
+      <div class="products__top">
+        <button class="btn btn_as-link btn_filter">
+          <svg class="filter-icon">
+            <use href="icons/sprite.svg#filter-icon"></use>
+          </svg>Фильтры
+        </button>
+        <button class="btn btn_as-link btn_sort products__btn_sort">
+          <svg class="sort-icon">
+            <use href="icons/sprite.svg#sort-icon"></use>
+          </svg>Сортировка
+        </button>
+      </div>
+      <div class="products__grid">
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 100%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">25</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 80%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">15</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 100%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">11</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 100%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">20</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 60%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">45</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 100%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">15</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 60%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">30</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 100%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">15</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 80%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">15</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 80%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">15</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 80%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">15</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 80%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">15</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 80%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">15</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 80%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">15</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 80%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">15</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 80%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">15</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">4545</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 80%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">15</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 80%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">15</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="item products__item">
+            <figure class="item__img"><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/><img src="img/products/product-1.jpg" alt="Title Block Menu"/></figure>
+            <h3 class="title item__title">Title Block Menu</h3>
+            <p class="item__id">31231</p>
+            <div class="item__rating">
+              <div class="item__rating_active" style="width: 80%">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+              <div class="item__rating_bgr">
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+                <svg class="item__star-icon">
+                  <use href="icons/sprite.svg#star-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eu dignissim neque in neque, nec. Ind including bistro.</p>
+            <p class="item__price">30</p>
+            <button class="btn item__btn btn_order btn_sm">Заказать</button>
+          </div>
+        </div>
+      </div>
+      <div class="products__bottom container">
+        <button class="btn btn_dark btn_more">Показать все</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <ul class="footer__recomendations">
+          <li>Рекомендации</li>
+          <li><a class="link" href="#">Наименование</a></li>
+          <li><a class="link" href="#">Наименование</a></li>
+          <li><a class="link" href="#">Наименование</a></li>
+          <li><a class="link" href="#">Наименование</a></li>
+        </ul>
+        <ul class="footer__payment">
+          <li>Варианты оплаты</li>
+          <li><a class="link" href="#">PayPal</a></li>
+          <li><a class="link" href="#">Visa</a></li>
+          <li><a class="link" href="#">MasterCard</a></li>
+        </ul>
+        <ul class="footer__service">
+          <li>Обслуживание</li>
+          <li><a class="link" href="#">Часто задаваемые вапросы</a></li>
+          <li><a class="link" href="#">Тех. поддержка</a></li>
+          <li><a class="link" href="#">Правила сервиса</a></li>
+        </ul>
+        <ul class="footer__contacts">
+          <li>Контакты</li>
+          <li><a class="link" href="#">Адрес</a></li>
+          <li><a class="link" href="#">E-mail</a></li>
+          <li><a class="link" href="#">Телефон</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal__block">
+        <button class="btn btn_close">
+          <svg viewbox="0 0 20 20">
+            <line x1="0" y1="0" x2="20" y2="20"></line>
+            <line x1="20" y1="0" x2="0" y2="20"></line>
+          </svg>
+        </button>
+        <div class="modal__slider-container">
+          <div class="modal__slider-wrap">
+            <div class="modal__slider-inner">
+              <div class="modal__slider"></div>
+              <button class="modal__arrow modal__arrow_prev"></button>
+              <button class="modal__arrow modal__arrow_next"></button>
+            </div>
+          </div>
+          <div class="modal__slider-nav-wrap">
+            <div class="modal__slider-nav"></div>
+          </div>
+        </div>
+        <div class="modal__info">
+          <div class="title modal__title"></div>
+          <div class="modal__rating-wrap">
+            <div class="modal__rating"></div>
+            <p class="modal__reviews-number">10 Отзывов</p>
+          </div>
+          <form class="modal__form">
+            <div class="form__hidden">
+              <input class="form__price-input" name="price"/>
+              <input class="form__title-input" name="title"/>
+              <input class="form__title-id" name="id"/>
+            </div>
+            <div class="form__details">
+              <div class="form__price"></div>
+              <div class="form__quantity">
+                <input class="form__input form__input_narrow" type="number" value="1" name="qty"/>
+                <button class="quantity__up"></button>
+                <button class="quantity__down"></button>
+              </div>
+            </div>
+            <div class="form__description"></div>
+            <div class="form__contact">
+              <input class="form__input form__input_normal form__email reset" type="email" name="email" placeholder="Введите email" required="required"/>
+              <input class="form__input form__input_normal form__phone reset" type="tel" name="phone" placeholder="Введите телефон" required="required"/>
+            </div>
+            <button class="btn form__btn btn_order btn_lg btn_submit" type="submit">Заказать</button><span class="form__success">Спасибо за заказ</span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

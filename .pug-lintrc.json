@@ -1,0 +1,22 @@
+{
+  "disallowAttributeConcatenation": true,
+  "disallowAttributeInterpolation": true,
+  "disallowBlockExpansion": true,
+  "disallowClassAttributeWithStaticValue": true,
+  "requireClassLiteralsBeforeAttributes": true,
+  "requireIdLiteralsBeforeAttributes": true,
+  "disallowClassLiteralsBeforeIdLiterals": true,
+  "disallowDuplicateAttributes": true,
+  "disallowIdAttributeWithStaticValue": true,
+  "disallowLegacyMixinCall": true,
+  "disallowMultipleLineBreaks": true,
+  "disallowSpacesInsideAttributeBrackets": true,
+  "disallowTagInterpolation": true,
+  "disallowTrailingSpaces": true,
+  "maximumLineLength": 100,
+  "requireLowerCaseAttributes": true,
+  "requireLowerCaseTags": true,
+  "requireSpaceAfterCodeOperator": true,
+  "validateExtensions": true,
+  "validateIndentation": 2
+}
